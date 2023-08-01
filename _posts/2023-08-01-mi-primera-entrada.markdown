@@ -3,25 +3,20 @@ layout: post
 title:  "Mi primera entrada"
 date:   2023-08-01 10:06:57 +0200
 # categories: jekyll update
-kramdown:
-  math_engine: katex
-  math_engine_opts: {}
+#katex: True
+tags: [Matemáticas, Tipeado]
 ---
-<!--
-<head>
-  <!--Compilar código LaTeX dentro de un documento HTML-->
-  <!--
-	<link rel="stylesheet" 
-    href="../../../katex/katex.css">
-  <script defer src="../../../katex/katex.js">
-  </script>
-  <script defer 
-    src="../../../katex/contrib/auto-render.js" 
-    onload="renderMathInElement(document.body);">
-  </script> 
-</head>
--->
+{% include math/post-head.html %}
 
+\\(I = \dfrac{P}{V\cdot \sqrt{3} \cdot \cos\varphi}\\)
+
+iYou can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
+
+You can also put large formulas in their own paragraph.
+
+$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
+
+That's it!
 
 Hola, esta es la primera entrada de mi blog personal. En ella simpleamente dejaré información sobre el uso de _Jekyll_, _GitHub-Pages_ y _KaTeX_ que me servirá de "chuleta" de uso personal, además de, quizás, ser útil para otras personas que lleguen hasta aquí.
 
@@ -88,7 +83,7 @@ $$f(n) = \begin{cases}
   3n+1,        & \text{if } n \text{ is odd}
 \end{cases}
 $$
- ```
+```
 
 Both inline and display modes are [supported](https://kramdown.gettalong.org/syntax.html#math-blocks). Powered by [KaTeX](https://github.com/Khan/KaTeX).
 
