@@ -6,22 +6,67 @@ date:   2023-08-01 10:06:57 +0200
 ---
 
 <head>
-  <!--Script para compilar código LaTeX con html-->
-  <link rel="stylesheet" 
-  href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" 
-  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" 
-  crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" 
-  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" 
-  crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" 
-  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" 
-  crossorigin="anonymous" 
-  onload="renderMathInElement(document.body);"></script>
+  <!--Compilar código LaTeX dentro de un documento HTML-->
+	<link rel="stylesheet" 
+    href="../../../katex/katex.css">
+  <script defer src="../../../katex/katex.js">
+  </script>
+  <script defer 
+    src="../../../katex/contrib/auto-render.js" 
+    onload="renderMathInElement(document.body);">
+  </script> 
 </head>
 
-Hola, esta es la primera entrada de mi blog personal.
+Hola, esta es la primera entrada de mi blog personal. En ella simpleamente dejaré información sobre el uso de _Jekyll_, _GitHub-Pages_ y _KaTeX_ que me servirá de "chuleta" de uso personal, además de, quizás, ser útil para otras personas que lleguen hasta aquí.
+
+## Sobre _Jekyll_
+
+Jekyll requires blog post files to be named according to the following format:
+
+`YEAR-MONTH-DAY-title.MARKUP`
+
+Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
+
+## Sobre _GitHub-Pages_
+## Sobre _KaTeX_
 
 <p>
-  \[L = {\Sigma, R, \Omega}\]
+  Aquí podemos obervar la inclusión en una línea de etxto de una fórmula matemática <b>TeX</b> construida gracias a <b>KaTeX</b>: \(P = V \cdot I \cdot \cos\phi\). 
 </p>
+
+<p>
+  Aquí vemos una fórmula en una línea aparte.
+
+  \[V \left( \bigwedge_{i=1}^n p_i \right) = \dfrac{1}{n} \sum_{i=1}^n V(p_i)\]
+</p>
+
+```math
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+```
+
+<!--
+## Canvas
+
+ <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas> 
+
+<canvas id="myCanvas" width="300" height="150">
+Fallback content, in case the browser does not support Canvas.
+</canvas>
+-->
