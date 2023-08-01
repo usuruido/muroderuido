@@ -8,17 +8,6 @@ tags: [Matemáticas, Tipeado]
 ---
 {% include math/katex-head.html %}
 
-\\[L = \langle \Sigma, Rm \Omega \rangle\\]
-\\(I = \dfrac{P}{V\cdot \sqrt{3} \cdot \cos\varphi}\\)
-
-iYou can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
-
-You can also put large formulas in their own paragraph.
-
-$$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$
-
-That's it!
-
 Hola, esta es la primera entrada de mi blog personal. En ella simpleamente dejaré información sobre el uso de _Jekyll_, _GitHub-Pages_ y _KaTeX_ que me servirá de "chuleta" de uso personal, además de, quizás, ser útil para otras personas que lleguen hasta aquí.
 
 ## Sobre _Jekyll_
