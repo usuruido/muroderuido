@@ -6,8 +6,9 @@ date:   2023-08-01 10:06:57 +0200
 #katex: True
 tags: [Matemáticas, Tipeado]
 ---
-{% include math/post-head.html %}
+{% include math/katex-head.html %}
 
+\\[L = \langle \Sigma, Rm \Omega \rangle\\]
 \\(I = \dfrac{P}{V\cdot \sqrt{3} \cdot \cos\varphi}\\)
 
 iYou can insert some formula $$f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi$$ in the middle of a sentence.
